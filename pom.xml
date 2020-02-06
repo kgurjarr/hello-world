@@ -82,5 +82,14 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+    
+    <distributionManagement>
+    <repository>
+      <id>Repository</id>
+      <name>Corporate Repository</name>
+      <url>https://maven.eu1.anypoint.mulesoft.com/api/v1/organizations/054a71a7-f444-45d7-bedd-82da71cf7f2d/maven</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 
 </project>
