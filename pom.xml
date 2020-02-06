@@ -60,6 +60,44 @@
             <layout>default</layout>
         </repository>
     </repositories>
+    
+    <profiles>
+	<profile>
+			<id>cloudhub</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.mule.tools.maven</groupId>
+						<artifactId>mule-maven-plugin</artifactId>
+						<configuration>
+							<cloudHubDeployment>
+								<muleVersion>4.2.1</muleVersion>
+								<username>yashhh</username>
+								<password>Kirti@1991</password>
+								<applicationName>helloworld</applicationName>
+								<environment>Sandbox</environment>
+								<businessGroup>yy</businessGroup>
+								<region>US East (Ohio)</region>
+								<uri>https://anypoint.mulesoft.com</uri>
+								<workerType>.1vCores</workerType>
+								<workers>1</workers>
+							</cloudHubDeployment>
+						</configuration>
+						<executions>
+							<execution>
+								<id>deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+	</profile>
+</profiles>
+    
     <pluginRepositories>
         <pluginRepository>
             <id>mulesoft-releases</id>
