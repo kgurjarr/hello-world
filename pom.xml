@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.2.1</app.runtime>
+		<app.runtime>4.1.1</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
 
@@ -26,15 +26,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<cloudHubDeployment>
-				<username>yashhh</username>
-				<password>Kirti@1991</password>
-				<environment>Sandbox</environment>
-				<workerType>MICRO</workerType>
-				<workers>1</workers>
-                <muleVersion>4.2.1</muleVersion>
-                <applicationName>helloworld</applicationName>
-				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -69,8 +60,6 @@
             <layout>default</layout>
         </repository>
     </repositories>
-    
-    
     <pluginRepositories>
         <pluginRepository>
             <id>mulesoft-releases</id>
@@ -82,7 +71,5 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    
- 
 
 </project>
